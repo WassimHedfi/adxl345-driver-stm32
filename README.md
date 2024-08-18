@@ -50,4 +50,26 @@ This repository contains a custom driver for the ADXL345 accelerometer, interfac
 1. Initialize the I2C and UART peripherals in `main.c`.
 2. Use the provided functions in `ADXL345.c` to configure the sensor and read acceleration data.
 3. Transmit the acceleration data using UART for real-time monitoring.
+### Example
+```bash
+   #include "ADXL345.h"
 
+   // Initialize peripherals
+   MX_I2C1_Init();
+   MX_USART2_UART_Init();
+
+   // Initialize ADXL345
+   ADXL345_Init();
+
+   // Main loop
+   while (1) {
+       float x_acc, y_acc, z_acc;
+    
+       // Read acceleration data
+       ADXL345_GetAccelerations(&x_acc, &y_acc, &z_acc);
+    
+       // Send data over UART
+       printf("X: %f, Y: %f, Z: %f\n", x_acc, y_acc, z_acc);
+    
+       HAL_Delay(500); // Adjust delay as needed
+   }
