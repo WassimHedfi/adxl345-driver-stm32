@@ -33,11 +33,11 @@ This repository contains a custom driver for the ADXL345 accelerometer, interfac
 
 ### Software Setup
 
-1. **Clone this repository**:
-   ```bash
-   git clone https://github.com/WassimHedfi/adxl345-driver-stm32.git
-2. **Open the project in STM32CubeIDE.**
-3. **Build and flash the project to your STM32 Nucleo-F446RE.**
+1. **Download the core folder containing necessary files**
+2. **Open STM32CubeIDE and setup your MXConfigurations with I2C1 at pins PB8 & PB9 and make use of USART2 on the Asynchronous mode**
+3. **Add driver files to your core folder (ADXL345.c ==> Src & ADXL345.h ==> Inc)**
+4. **Replace your main.c file, or adjust your own**
+5. **Build and flash the project to your STM32 Nucleo-F446RE.**
 
 ## Code Structure
 
