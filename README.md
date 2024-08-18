@@ -47,6 +47,9 @@ This repository contains a custom driver for the ADXL345 accelerometer, interfac
 
 ## Usage
 
+**N.B.**
+Note that the `ADXL345.c` driver file includes two functions for obtaining acceleration data: one for basic data retrieval and another, used in `main.c`, that converts the data into a string buffer, preparing it for transmission over UART.
+
 1. Initialize the I2C and UART peripherals in `main.c`.
 2. Use the provided functions in `ADXL345.c` to configure the sensor and read acceleration data.
 3. Transmit the acceleration data using UART for real-time monitoring.
