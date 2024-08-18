@@ -69,7 +69,7 @@ Note that the `ADXL345.c` driver file includes two functions for obtaining accel
        float x_acc, y_acc, z_acc;
     
        // Read acceleration data
-       ADXL345_GetAccelerations(&x_acc, &y_acc, &z_acc);
+       TT_GET_ACCELERATIONS();
     
        // Send data over UART
        printf("X: %f, Y: %f, Z: %f\n", x_acc, y_acc, z_acc);
