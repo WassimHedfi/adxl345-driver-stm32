@@ -17,6 +17,12 @@ This repository provides a custom driver for the ADXL345 accelerometer, designed
 - **[ADXL345 Accelerometer](https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL345.pdf)**: A 3-axis accelerometer with I2C communication.
 - **[STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)**: Recommended IDE for development and compilation.
 - **UART Interface**: For monitoring or processing the accelerometer data on a connected device.
+  <p align="center">
+  <img src="Figures/adxl345.png" alt="First Image" width="190"/>
+  <img src="Figures/stm32f446re_nucleo.png" alt="Third Image" width="150"/>
+    <img src="Figures/stm32cubeide.png" alt="Third Image" width="200"/>
+    
+</p>
 
 ### ⚙️ Hardware Setup
 
